@@ -1,0 +1,46 @@
+.home__hero {
+  padding-block: var(--space-4) var(--space-6);
+}
+
+.home__chapter {
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  letter-spacing: 0.08em;
+  color: var(--color-emphasis);
+  margin-bottom: var(--space-2);
+}
+
+.home__title {
+  margin-bottom: var(--space-4);
+}
+.home__name {
+  color: var(--color-accent);
+}
+
+.home__bubble {
+  margin-bottom: var(--space-5);
+}
+
+.home__cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.home__section-title {
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: var(--border-panel);
+}
+
+.home__featured-card h3 {
+  margin-bottom: var(--space-2);
+}
+
+.home__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}

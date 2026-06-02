@@ -1,0 +1,24 @@
+.card {
+  background: var(--color-panel);
+  border: var(--border-ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-panel);
+  padding: var(--space-4);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+/* Hover sutil: la viñeta "salta" como en un panel de cómic */
+.card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--color-border);
+}
+
+/* Destacada: para el proyecto estrella (SeeleScans) */
+.card--featured {
+  border-color: var(--color-accent);
+  box-shadow: 6px 6px 0 var(--color-accent);
+  padding: var(--space-5);
+}
+.card--featured:hover {
+  box-shadow: 9px 9px 0 var(--color-accent);
+}
