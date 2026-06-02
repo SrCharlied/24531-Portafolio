@@ -44,3 +44,15 @@
   gap: var(--space-2);
   margin-top: var(--space-3);
 }
+
+.home__more {
+  margin-top: var(--space-6);
+}
+
+.home__grid {
+  list-style: none;
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  margin-bottom: var(--space-4);
+}

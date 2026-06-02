@@ -1,0 +1,42 @@
+.tech__header {
+  margin-bottom: var(--space-5);
+}
+.tech__chapter {
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+  color: var(--color-emphasis);
+  margin-bottom: var(--space-1);
+}
+.tech__intro {
+  color: var(--color-ink-soft);
+  max-width: 65ch;
+  margin-top: var(--space-2);
+}
+
+.tech__list {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.tech__name {
+  font-size: var(--fs-lg);
+  margin-bottom: var(--space-3);
+  color: var(--color-accent);
+}
+
+.tech__why,
+.tech__how,
+.tech__related {
+  margin-bottom: var(--space-2);
+  font-size: var(--fs-sm);
+}
+.tech__why strong,
+.tech__how strong,
+.tech__related strong {
+  color: var(--color-ink);
+}
+.tech__why,
+.tech__how {
+  color: var(--color-ink-soft);
+}

@@ -1,0 +1,107 @@
+.detail__back {
+  margin-bottom: var(--space-4);
+  font-size: var(--fs-sm);
+}
+
+.detail__header {
+  margin-bottom: var(--space-5);
+}
+
+.detail__head-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.detail__description {
+  max-width: 70ch;
+  color: var(--color-ink-soft);
+}
+
+.detail__tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.detail__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+/* Capturas */
+.detail__shots {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-bottom: var(--space-6);
+}
+.detail__shot {
+  border: var(--border-ink);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
+  background: var(--color-bg);
+}
+.detail__shot img {
+  width: 100%;
+  height: auto;
+}
+
+/* Caso de estudio (estrella) */
+.detail__case {
+  display: grid;
+  gap: var(--space-5);
+  margin-bottom: var(--space-6);
+}
+.detail__case-section {
+  border-left: 3px solid var(--color-accent);
+  padding-left: var(--space-4);
+}
+.detail__case-section h2 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-2);
+}
+.detail__case-section p {
+  max-width: 70ch;
+  color: var(--color-ink-soft);
+}
+
+/* Detalle estándar */
+.detail__std {
+  display: grid;
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
+}
+
+.detail__block {
+  margin-bottom: var(--space-5);
+}
+.detail__block h2 {
+  font-size: var(--fs-xl);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: var(--border-panel);
+}
+.detail__block ul {
+  padding-left: var(--space-4);
+  color: var(--color-ink-soft);
+}
+.detail__block li {
+  margin-bottom: var(--space-1);
+}
+
+.detail__highlights {
+  columns: 2;
+  column-gap: var(--space-5);
+}
+@media (max-width: 560px) {
+  .detail__highlights {
+    columns: 1;
+  }
+}

@@ -1,0 +1,36 @@
+.projects__header {
+  margin-bottom: var(--space-5);
+}
+.projects__chapter {
+  font-family: var(--font-display);
+  letter-spacing: 0.08em;
+  color: var(--color-emphasis);
+  margin-bottom: var(--space-1);
+}
+.projects__intro {
+  color: var(--color-ink-soft);
+  max-width: 60ch;
+  margin-top: var(--space-2);
+}
+
+.projects__grid {
+  list-style: none;
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+.projects__item {
+  display: flex;
+}
+
+/* El proyecto estrella ocupa toda la fila en pantallas anchas */
+.projects__item:first-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+  .projects__item:first-child {
+    grid-column: auto;
+  }
+}
