@@ -1,5 +1,5 @@
 .projects__header {
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-4);
 }
 .projects__chapter {
   font-family: var(--font-display);
@@ -13,6 +13,66 @@
   margin-top: var(--space-2);
 }
 
+/* === Controles: filtros + búsqueda === */
+.projects__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+.projects__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.projects__filter {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-ink-soft);
+  background: var(--color-panel);
+  border: var(--border-panel);
+  border-radius: var(--radius);
+  padding: var(--space-1) var(--space-3);
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition),
+    background var(--transition);
+}
+.projects__filter:hover {
+  color: var(--color-ink);
+  border-color: var(--color-ink-soft);
+}
+.projects__filter.is-active {
+  color: var(--color-bg);
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.projects__search input {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  color: var(--color-ink);
+  background: var(--color-panel);
+  border: var(--border-panel);
+  border-radius: var(--radius);
+  padding: var(--space-2) var(--space-3);
+  min-width: 240px;
+}
+.projects__search input::placeholder {
+  color: var(--color-ink-soft);
+}
+
+.projects__count {
+  font-size: var(--fs-sm);
+  color: var(--color-ink-soft);
+  margin-bottom: var(--space-4);
+}
+
+/* === Grid === */
 .projects__grid {
   list-style: none;
   display: grid;
@@ -24,13 +84,46 @@
   display: flex;
 }
 
-/* El proyecto estrella ocupa toda la fila en pantallas anchas */
-.projects__item:first-child {
+/* Solo el proyecto estrella ocupa toda la fila */
+.projects__item--featured {
   grid-column: 1 / -1;
 }
 
 @media (max-width: 600px) {
-  .projects__item:first-child {
+  .projects__item--featured {
     grid-column: auto;
   }
+}
+
+/* === Estado vacío === */
+.projects__empty {
+  border: var(--border-panel);
+  border-radius: var(--radius);
+  background: var(--color-panel);
+  padding: var(--space-5);
+  text-align: center;
+  color: var(--color-ink-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+.projects__empty-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  color: var(--color-ink);
+  letter-spacing: 0.04em;
+}
+
+/* Utilidad para lectores de pantalla */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
