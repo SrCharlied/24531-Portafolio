@@ -62,15 +62,15 @@ export const projects = [
     },
     screenshots: [
       {
-        src: "/screenshots/seelescans-client.png",
+        src: "/screenshots/seelescans-client.webp",
         alt: "Página principal del cliente de SeeleScans con la grilla de manga",
       },
       {
-        src: "/screenshots/seelescans-detail.png",
+        src: "/screenshots/seelescans-detail.webp",
         alt: "Vista de detalle / lector de un capítulo en SeeleScans",
       },
       {
-        src: "/screenshots/seelescans-api.png",
+        src: "/screenshots/seelescans-api.webp",
         alt: "Swagger UI de la API de SeeleScans con los endpoints documentados",
       },
     ],
@@ -143,7 +143,7 @@ export const projects = [
     },
     screenshots: [
       {
-        src: "/screenshots/gamestore.png",
+        src: "/screenshots/gamestore.webp",
         alt: "Vista de inventario/ventas del sistema GameStore",
       },
     ],
@@ -196,7 +196,7 @@ export const projects = [
     },
     screenshots: [
       {
-        src: "/screenshots/elden-ring-wiki.png",
+        src: "/screenshots/elden-ring-wiki.webp",
         alt: "Listado con filtros de la wiki de Elden Ring",
       },
     ],
@@ -247,7 +247,7 @@ export const projects = [
     },
     screenshots: [
       {
-        src: "/screenshots/calculadora-gb.png",
+        src: "/screenshots/calculadora-gb.webp",
         alt: "Calculadora con estética Game Boy",
       },
     ],
@@ -295,7 +295,7 @@ export const projects = [
     },
     screenshots: [
       {
-        src: "/screenshots/snake.png",
+        src: "/screenshots/snake.webp",
         alt: "Partida del juego Snake en curso",
       },
     ],
