@@ -1,0 +1,75 @@
+.gh {
+  margin-top: var(--space-6);
+}
+
+.gh__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-2);
+  border-bottom: var(--border-panel);
+}
+
+.gh__title {
+  font-size: var(--fs-2xl);
+}
+
+.gh__grid {
+  list-style: none;
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
+
+.gh__repo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  height: 100%;
+  padding: var(--space-3);
+  background: var(--color-panel);
+  border: var(--border-panel);
+  border-radius: var(--radius);
+  color: inherit;
+  transition: border-color var(--transition), transform var(--transition);
+}
+.gh__repo:hover {
+  color: inherit;
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.gh__repo-name {
+  font-size: var(--fs-base);
+  color: var(--color-accent);
+  word-break: break-word;
+}
+
+.gh__repo-desc {
+  font-size: var(--fs-sm);
+  color: var(--color-ink-soft);
+  flex: 1;
+}
+
+.gh__repo-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.gh__stars {
+  font-size: var(--fs-xs);
+  color: var(--color-accent-2);
+}
+
+.gh__empty {
+  border: var(--border-panel);
+  border-radius: var(--radius);
+  background: var(--color-panel);
+  padding: var(--space-5);
+  text-align: center;
+  color: var(--color-ink-soft);
+}

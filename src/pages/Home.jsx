@@ -5,6 +5,7 @@ import Card from "../components/ui/Card.jsx";
 import Badge from "../components/ui/Badge.jsx";
 import SpeechBubble from "../components/ui/SpeechBubble.jsx";
 import ProjectCard from "../components/ui/ProjectCard.jsx";
+import GitHubActivity from "../components/sections/GitHubActivity.jsx";
 import "./Home.css";
 
 export default function Home() {
@@ -74,6 +75,8 @@ export default function Home() {
           </Button>
         </div>
       </section>
+
+      <GitHubActivity />
     </div>
   );
 }
