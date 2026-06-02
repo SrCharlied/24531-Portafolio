@@ -1,0 +1,41 @@
+:root {
+  /* === Paleta manga / print (sobria) === */
+  --color-bg: #101018; /* fondo principal — "papel" oscuro */
+  --color-panel: #181824; /* paneles / viñetas / cards */
+  --color-ink: #f4f1de; /* texto principal — tinta clara */
+  --color-ink-soft: #b8b5a6; /* texto secundario / atenuado */
+  --color-accent: #88c070; /* acento positivo (verde retro) */
+  --color-accent-2: #f2cc8f; /* acento secundario (amarillo suave) */
+  --color-emphasis: #e07a5f; /* énfasis (naranja/rojo) */
+  --color-border: #2f3045; /* bordes / sombras / líneas de viñeta */
+
+  /* === Tipografía === */
+  --font-display: "Bangers", "Press Start 2P", system-ui, sans-serif; /* títulos tipo ink/manga */
+  --font-body: "Inter", "Atkinson Hyperlegible", system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif; /* cuerpo legible */
+
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.6rem;
+  --fs-2xl: 2.2rem;
+  --fs-3xl: clamp(2.4rem, 6vw, 4rem);
+
+  /* === Espaciado === */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  /* === Layout === */
+  --container: 1080px;
+  --radius: 4px; /* esquinas casi rectas, estilo viñeta */
+  --border-ink: 2px solid var(--color-ink);
+  --border-panel: 1px solid var(--color-border);
+  --shadow-panel: 4px 4px 0 var(--color-border); /* sombra dura tipo cómic */
+
+  --transition: 160ms ease;
+}

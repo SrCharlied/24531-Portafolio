@@ -1,0 +1,30 @@
+.footer {
+  border-top: var(--border-ink);
+  margin-top: var(--space-6);
+  background: var(--color-panel);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-block: var(--space-4);
+}
+
+.footer__note {
+  color: var(--color-ink-soft);
+  font-size: var(--fs-sm);
+}
+
+.footer__links {
+  display: flex;
+  gap: var(--space-4);
+  list-style: none;
+}
+
+.footer__links a {
+  font-weight: 600;
+  font-size: var(--fs-sm);
+}
