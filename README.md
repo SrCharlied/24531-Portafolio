@@ -2,6 +2,8 @@
 
 Portafolio personal desarrollado como **SPA** para una simulación laboral full-stack junior. Reúne proyectos de frontend, APIs, bases de datos y experiencias interactivas, con **SeeleScans** como proyecto estrella.
 
+🔗 **Demo en vivo:** https://charliedev.servigtdev.com
+
 > **Stack:** React · Vite · React Router · CSS · GitHub API · Docker
 > **Estética:** manga / print sobria, en cohesión con el proyecto estrella.
 
@@ -80,7 +82,24 @@ La app queda en `http://localhost:8080`. El `nginx.conf` incluye el fallback a `
 
 ## Despliegue
 
-Pensado para un **VPS propio**: se construye la imagen Docker y se sirve con Nginx detrás de un reverse proxy (Caddy/Nginx) con TLS.
+Desplegado en un **VPS propio**: la imagen Docker (Nginx) corre como contenedor y **Caddy** actúa como reverse proxy con TLS automático.
+
+```bash
+# en el VPS
+git pull
+docker build -t portafolio .
+docker rm -f portafolio
+docker run -d --restart unless-stopped -p 127.0.0.1:8090:80 --name portafolio portafolio
+```
+
+Bloque de Caddy:
+
+```caddy
+charliedev.servigtdev.com {
+	encode gzip zstd
+	reverse_proxy localhost:8090
+}
+```
 
 ## Autor
 
